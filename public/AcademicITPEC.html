@@ -18,29 +18,37 @@
         </div>
         <div>
             <div class="fixed w-full z-50">
-                <nav class=""> <!--backdrop-blur-md-->
-                    <div class=" grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md ">
-                        <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
+                <nav> <!--backdrop-blur-md-->
+                    <div
+                        class=" grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md ">
+                        <div
+                            class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
                             <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
-                                <img src="../images/M.S.T LOGO.jpg" alt="M.S.T Logo" class="w-[55px] md:w-14 py-1 rounded-full">
+                                <img src="../images/M.S.T LOGO.jpg" alt="M.S.T Logo"
+                                    class="w-[55px] md:w-14 py-1 rounded-full">
                             </div>
                             <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
-                                <h1 class="flex sm:hidden ml-4 whitespace-nowrap text-lg font-bold xxs:inline">M.S.T</h1>
-                                <h1 class="flex lg:hidden Uni whitespace-nowrap text-lg md:text-2xl sm:inline xs-text[2px] xxs:hidden">M.S.T University</h1>
-                                <h1 class="text-lg mdl:text-[18px] xl:text-2xl font-bold hidden lg:inline md:whitespace-nowrap Uni">Myanmar Skills Technologies</h1>
+                                <h1 class="flex sm:hidden ml-4 whitespace-nowrap text-lg font-bold xxs:inline">M.S.T
+                                </h1>
+                                <h1
+                                    class="flex lg:hidden Uni whitespace-nowrap text-lg md:text-2xl sm:inline xs-text[2px] xxs:hidden">
+                                    M.S.T University</h1>
+                                <h1
+                                    class="text-lg mdl:text-[18px] xl:text-2xl font-bold hidden lg:inline md:whitespace-nowrap Uni">
+                                    Myanmar Skills Technologies</h1>
                             </div>
                         </div>
-    
+
                         <!-- Space lol -->
                         <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
-    
+
                         <!-- Navigations -->
                         <div class="hidden lg:inline top-3 absolute right-2">
                             <ul class="inline-flex items-center text-lg font-semibold">
                                 <li class="xlists">
                                     <a href="index.html">Home</a>
                                 </li>
-                                <li class="xlists cursor-pointer" onclick="">
+                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops')">
                                     Course
                                     <div class="ddops hidden">
                                         <ul>
@@ -53,7 +61,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="xlists cursor-pointer whitespace-nowrap" onclick="">
+                                <li class="xlists cursor-pointer whitespace-nowrap" onclick="openMenu('.ddops2')">
                                     Events & Blogs
                                     <div class="ddops2 hidden">
                                         <ul>
@@ -66,7 +74,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="xlists cursor-pointer" onclick="">
+                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops3')">
                                     About
                                     <div class="ddops3 hidden">
                                         <ul>
@@ -85,13 +93,19 @@
                             <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
                                 <div class="cursor-pointer" onclick="showMenu()">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor"
+                                            class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                         </svg>
                                     </div>
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor"
+                                            class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12" />
                                         </svg>
                                     </div>
                                 </div>
@@ -628,48 +642,6 @@
         </div>
 
     </main>
-
-
-    <script>
-
-
-  // Click To The Top
-  let TopButton = document.getElementById("ToTop");
-  window.onscroll = function() {scrolls()};
-
-  function scrolls() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      TopButton.style.display = "block";
-      } 
-  else {
-      TopButton.style.display = "none";
-      }
-  }
-  function toTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  }
-
-
-//   Burger menu
-        const menu = document.querySelector('#menu');
-        const burger = document.querySelector('#burger');
-        const cross = document.querySelector('#cross');
-
-        function showMenu(){
-        if(menu.classList.contains('hidden')){
-            menu.classList.remove('hidden');
-            burger.classList.add('hidden');
-            cross.classList.remove('hidden');
-        }
-        else{
-            menu.classList.add('hidden');
-            burger.classList.remove('hidden');
-            cross.classList.add('hidden');
-        }
-        }
-        
-
-    </script>
+<script src="app.js"></script>
 </body>
 </html>
