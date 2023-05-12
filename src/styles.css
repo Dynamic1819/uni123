@@ -60,13 +60,13 @@
     @apply py-2 px-7 hover:text-secondary text-center whitespace-nowrap;
 }
 .ddops{
-    @apply absolute top-16 bg-white -translate-x-7 cursor-pointer;
+    @apply absolute translate-y-6 px-9 bg-white -translate-x-12 cursor-pointer border-x-4 border-b-4 rounded-b-md;
 }
 .ddops2{
-    @apply absolute top-16 bg-white cursor-pointer;
+    @apply absolute translate-y-6 px-8 bg-white cursor-pointer border-x-4 border-b-4 rounded-b-md;
 }
 .ddops3{
-    @apply absolute top-16 bg-white -translate-x-16 cursor-pointer;
+    @apply absolute translate-y-6 px-9 bg-white -translate-x-14 cursor-pointer border-x-4 border-b-4 rounded-b-md;
 }
 .ddops li,.ddops2 li,.ddops3 li{
     @apply text-black hover:text-secondary;
